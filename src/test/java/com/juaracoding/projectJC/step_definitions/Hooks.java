@@ -1,14 +1,14 @@
-package com.juaracoding.pageobject;
+package com.juaracoding.projectJC.step_definitions;
 
 import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import com.juaracoding.pageobject.drivers.DriverSingleton;
-import com.juaracoding.pageobject.utils.Constants;
-import com.juaracoding.pageobject.utils.TestScenarios;
-import com.juaracoding.pageobject.utils.Utils;
+import com.juaracoding.projectJC.drivers.DriverSingleton;
+import com.juaracoding.projectJC.utils.Constants;
+import com.juaracoding.projectJC.utils.TestScenarios;
+import com.juaracoding.projectJC.utils.Utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;

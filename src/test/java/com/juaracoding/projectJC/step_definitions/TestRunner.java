@@ -1,4 +1,4 @@
-package com.juaracoding.pageobject;
+package com.juaracoding.projectJC.step_definitions;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;

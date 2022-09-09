@@ -1,12 +1,12 @@
-package com.juaracoding.pageobject.drivers;
+package com.juaracoding.projectJC.drivers;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
-import com.juaracoding.pageobject.drivers.strategies.DriverStrategy;
-import com.juaracoding.pageobject.drivers.strategies.DriverStrategyImplementer;
-import com.juaracoding.pageobject.utils.Constants;
+import com.juaracoding.projectJC.drivers.strategies.DriverStrategy;
+import com.juaracoding.projectJC.drivers.strategies.DriverStrategyImplementer;
+import com.juaracoding.projectJC.utils.Constants;
 
 public class DriverSingleton {
 

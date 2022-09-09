@@ -1,6 +1,6 @@
-package com.juaracoding.pageobject.drivers.strategies;
+package com.juaracoding.projectJC.drivers.strategies;
 
-import com.juaracoding.pageobject.utils.Constants;
+import com.juaracoding.projectJC.utils.Constants;
 
 public class DriverStrategyImplementer {
 

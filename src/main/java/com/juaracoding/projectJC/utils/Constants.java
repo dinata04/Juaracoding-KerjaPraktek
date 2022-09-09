@@ -1,4 +1,4 @@
-package com.juaracoding.pageobject.utils;
+package com.juaracoding.projectJC.utils;
 
 public class Constants {
 

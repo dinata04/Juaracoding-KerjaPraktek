@@ -1,4 +1,4 @@
-package com.juaracoding.pageobject.utils;
+package com.juaracoding.projectJC.utils;
 
 import java.io.File;
 import java.io.IOException;
