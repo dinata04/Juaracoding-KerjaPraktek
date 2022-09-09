@@ -9,3 +9,4 @@ public class Constants {
 	public static final String URLTwo = "https://dev.ptdika.com/web_jc_v2/";
 	
 }
+	
