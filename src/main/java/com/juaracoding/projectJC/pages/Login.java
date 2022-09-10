@@ -1,8 +1,44 @@
 package com.juaracoding.projectJC.pages;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.juaracoding.projectJC.drivers.DriverSingleton;
+
 public class Login {
-	public static void main(String[] args) {
-		System.out.println("tes");
+	
+	private WebDriver driver;
+	
+	public Login() {
+		this.driver = DriverSingleton.getDriver();
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath = "//input[@id='username']")
+	private WebElement username;
+	
+	@FindBy(xpath = "//input[@id='password']")
+	private WebElement password;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement btnSign;
+	
+	@FindBy(xpath = "//li[contains(text(),'Dashboard')]")
+	private WebElement txtDashboard;
+	
+	public void login(String username, String password) {
+		this.username.sendKeys(username);
+		this.password.sendKeys(password);
+	}
+	
+	public void clickBtnSign() {
+		btnSign.click();
+	}
+	
+	public String getTxtDashboard() {
+		return txtDashboard.getText();
 	}
 
 }

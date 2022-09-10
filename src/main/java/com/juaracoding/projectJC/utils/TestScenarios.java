@@ -2,7 +2,7 @@ package com.juaracoding.projectJC.utils;
 
 public enum TestScenarios {
 	
-	T1("User Login");
+	T1("User valid login");
 	
 	private String testName;
 	
