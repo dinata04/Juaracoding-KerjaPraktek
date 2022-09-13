@@ -1,4 +1,4 @@
-package com.juaracoding.projectJC.step_definitions;
+package com.juaracoding.projectJC.web_admin.step_definitions;
 
 import java.io.IOException;
 
