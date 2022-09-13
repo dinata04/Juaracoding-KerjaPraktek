@@ -39,18 +39,30 @@ public class TestLogin {
 		extentTest.log(LogStatus.PASS, "User input username password");
 	}
 	
-	@And("User clik button sign")
-	public void user_clik_button_sign() {
+	@And("User click button sign")
+	public void user_click_button_sign() {
 		Hooks.delay(1);
 		login.clickBtnSign();
-		extentTest.log(LogStatus.PASS, "User clik button sign");
+		extentTest.log(LogStatus.PASS, "User click button sign");
 	}
 	
-	@Then("User Valid login")
-	public void user_valid_login() {
-		assertEquals(login.getTxtDashboard(),"Dashboard");
-		extentTest.log(LogStatus.PASS, "User Valid login");
-	}
+	//@Then("User Valid login")
+	//public void user_valid_login() {
+	//	assertEquals(login.getTxtDashboard(),"Dashboard");
+		//extentTest.log(LogStatus.PASS, "User Valid login");
+	//}
 	
+	@And("User click home JC")
+	public void user_click_home_JC() {
+		Hooks.delay(1);
+		login.clickBtnSign();
+		extentTest.log(LogStatus.PASS, "User click home JC");
+	}
 
+	@And("User click Benefit")
+	public void user_click_Benefit() {
+		Hooks.delay(1);
+		login.clickBtnSign();
+		extentTest.log(LogStatus.PASS, "User click Benefit");
+	}
 }
