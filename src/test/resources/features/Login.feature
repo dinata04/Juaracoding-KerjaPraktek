@@ -21,7 +21,6 @@ Feature: Login Admin
 		And User click button sign four
 		Then User invalid login four
 		
-	
 	Scenario: User valid login
 		When User input username password
 		And User clik button sign
