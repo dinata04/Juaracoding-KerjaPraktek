@@ -19,7 +19,7 @@ public class Testimonial {
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	
+	//Web Admin
 	@FindBy(xpath = "//a[@class=\"sidebar-link sidebar-title\"]")
 	private WebElement subMenu ;
 	@FindBy(xpath = "//a[normalize-space()='Testimonial']")
@@ -42,9 +42,9 @@ public class Testimonial {
 	private WebElement searchNama;
 	@FindBy(xpath = "//b[normalize-space()='Total Search : 1 Data']")// ganti nama testernya ke nama
 	private WebElement cekPesertaAdd;
-	@FindBy(xpath = "//figure[20]//a[1]//img[1]")
-	private WebElement openPeserta20;
-	@FindBy(xpath = "//input[@value='Pilih Gambar Ulang']")
+	@FindBy(xpath = "//figure[@class='col-xl-3 col-sm-6']")
+	private WebElement openPeserta;
+	@FindBy(xpath = "//input[@id='filename']")
 	private WebElement inputFileUlang;
 	@FindBy(xpath = "//input[@id='nama']")
 	private WebElement inputNamaUlang;
@@ -56,7 +56,9 @@ public class Testimonial {
 	private WebElement AlertisiTestimonialulang;
 	@FindBy(xpath = "//p[normalize-space()='Controller or its method is not found: {0}::{1}']")
 	private WebElement AlertFoto;
-	
+	//Web JC
+	@FindBy(xpath="//p[normalize-space()='ini isi testimonialnya']")
+	private WebElement isiTestimonialJc;
 	
 	
 	public void ButtonSubMenu() {
@@ -106,7 +108,7 @@ public class Testimonial {
 	}
 	
 	public void OpenPeserta() {
-		openPeserta20.click();
+		openPeserta.click();
 	}
 	
 	public void inputFileUlang(String foto) {
@@ -132,5 +134,21 @@ public class Testimonial {
 	public boolean AlertFoto() {						//	ini boolean
 		return AlertFoto.isDisplayed();
 	}
+	
+	public boolean isiTestimonialJC() {					//	ini boolean
+		return isiTestimonialJc.isDisplayed();
+	}
+	
+	public void clearNamaPesertaEdit() {				//	hapus nama edit
+		inputNamaUlang.clear();		
+	}
+	
+	public void clearisiTestimonialPesertaEdit() {		//	hapus testimonial edit
+		txtTestimonialUlang.clear();
+		}
+	
+	public void clearinputFilePesertaEdit() {			//	hapus foto edit
+		inputFileUlang.clear();
+		}
 	
 }

@@ -1,5 +1,6 @@
 package com.juaracoding.projectJC.pages;
 
+import org.jsoup.select.Evaluator.IsEmpty;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.juaracoding.projectJC.drivers.DriverSingleton;
 
+import freemarker.core.ReturnInstruction.Return;
+
 public class About {
 	
 private WebDriver driver;
@@ -17,7 +20,7 @@ private WebDriver driver;
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
-	
+	//Web Admin
 	@FindBy(xpath = "//span[normalize-space()='About']")
 	private WebElement btnAbout;
 	@FindBy(xpath = "//a[@class='btn btn-gradient']")
@@ -48,6 +51,13 @@ private WebDriver driver;
 	private WebElement cekTrainerEdit;
 	@FindBy(xpath = "//alert[@class='alert alert-success']")// edit sama seperti add
 	private WebElement AlertSuccesstrainer;
+	//Web JC
+	@FindBy(xpath = "//a[normalize-space()='About']")
+	private WebElement btnAboutJc;
+	@FindBy(xpath="//button[@class='owl-next']")
+	private WebElement radioBtnAbout;
+	@FindBy(xpath="//p[normalize-space()='isi test Trainer']")
+	private WebElement ProfileTrainerJc;
 	
 	
 	public void ButtonAbout() {
@@ -103,12 +113,78 @@ private WebDriver driver;
 		inputNamaUlang.sendKeys(nama);
 	}
 	
-	public boolean cekTrainerEdit() {
+	public boolean cekTrainerEdit() {							//	ini boolean
 		return cekTrainerEdit.isDisplayed();
 	}
 	
-	public boolean alertSuccessTrainer() {
+	public boolean alertSuccessTrainer() {						//	ini boolean
 		return AlertSuccesstrainer.isDisplayed();
 	}
 	
+	public boolean attributInputName(String attribute) {
+		boolean result = false;
+		try {
+		String value = inputNama.getAttribute(attribute);
+		if(value!=null) {
+			result=true;
+		}
+		}catch(Exception e) {}
+		return result;
+	}
+	
+	public boolean attributinputFile(String attribute) {
+		boolean result = false;
+		try {
+		String value = inputFile.getAttribute(attribute);
+		if(value!=null) {
+			result=true;
+		}
+		}catch(Exception e) {}
+		return result;
+	}
+	
+	public boolean attributinputJabatan(String attribute) {  		//edit sama seperti add
+		boolean result = false;
+		try {
+		String value = inputJabatan.getAttribute(attribute);
+		if(value!=null) {
+			result=true;
+		}
+		}catch(Exception e) {}
+		return result;
+	}
+	
+	public boolean attributinputTextProfile(String attribute) {		//edit sama seperti add
+		boolean result = false;
+		try {
+		String value = txtProfile.getAttribute(attribute);
+		if(value!=null) {
+			result=true;
+		}
+		}catch(Exception e) {}
+		return result;
+	}
+	
+	public boolean attributinputNamaUlang(String attribute) {
+		boolean result = false;
+		try {
+		String value = inputNamaUlang.getAttribute(attribute);
+		if(value!=null) {
+			result=true;
+		}
+		}catch(Exception e) {}
+		return result;
+	}
+	
+	public void btnAboutJC() {
+		btnAboutJc.click();
+	}
+	
+	public void radioBtnAboutJc() {
+		radioBtnAbout.click();
+	}
+	
+	public boolean profileTrainerJc() {						//	ini boolean
+		return ProfileTrainerJc.isDisplayed();
+	}
 }

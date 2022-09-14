@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-12T18:06:49 WIB" name="Default suite" finished-at="2022-09-12T18:07:17 WIB" duration-ms="27955">
+  <suite started-at="2022-09-14T18:44:45 WIB" name="Default suite" finished-at="2022-09-14T18:46:36 WIB" duration-ms="111235">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-12T18:06:49 WIB" name="Default test" finished-at="2022-09-12T18:07:17 WIB" duration-ms="27955">
-      <class name="com.juaracoding.projectJC.About.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" started-at="2022-09-12T18:06:49 WIB" name="setUpClass" finished-at="2022-09-12T18:06:50 WIB" duration-ms="433" status="PASS">
+    <test started-at="2022-09-14T18:44:45 WIB" name="Default test" finished-at="2022-09-14T18:46:36 WIB" duration-ms="111235">
+      <class name="com.juaracoding.projectJC.Testimonial.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:44:45 WIB" name="setUpClass" finished-at="2022-09-14T18:44:46 WIB" duration-ms="429" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1b1c538d]]>
+                <![CDATA[org.testng.TestRunner@22d322f5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" started-at="2022-09-12T18:06:50 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-12T18:07:00 WIB" duration-ms="10499" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:44:46 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:44:54 WIB" duration-ms="7922" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,59 +37,255 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" started-at="2022-09-12T18:07:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-12T18:07:10 WIB" duration-ms="10062" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:44:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:45:00 WIB" duration-ms="6879" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["show about menu"]]>
+                <![CDATA["show testimonial menu"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Modul About"]]>
+                <![CDATA["Modul Testimonial"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" started-at="2022-09-12T18:07:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-12T18:07:14 WIB" duration-ms="3294" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:45:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:45:21 WIB" duration-ms="20222" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["add trainer"]]>
+                <![CDATA["edit testimonial invalid delete name"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Modul About"]]>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //div[@class='alert alert-danger mt-2']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5JFS7KH', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31920, moz:profile: C:\Users\Ramma\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fe954d-020d-4233-a4bd-225be37e4e63
+*** Element info: {Using=xpath, value=//div[@class='alert alert-danger mt-2']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='alert alert-danger mt-2']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5JFS7KH', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31920, moz:profile: C:\Users\Ramma\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fe954d-020d-4233-a4bd-225be37e4e63
+*** Element info: {Using=xpath, value=//div[@class='alert alert-danger mt-2']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+at com.juaracoding.projectJC.pages.Testimonial.AlertIsiTestimonialUlang(Testimonial.java:131)
+at com.juaracoding.projectJC.Testimonial.TestTestimonial.cekAlertEdit(TestTestimonial.java:139)
+at ✽.cek alert edit(file:///C:/Users/Ramma/Desktop/Juaracoding-KerjaPraktek/src/test/resources/features/Testimonial/02Testimonial.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:45:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:45:33 WIB" duration-ms="11925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["edit testimonial invalid delete text testimonial"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" started-at="2022-09-12T18:07:14 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-12T18:07:15 WIB" duration-ms="1480" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:45:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:45:36 WIB" duration-ms="3249" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["check data"]]>
+                <![CDATA["edit testimonial valid change data"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Modul About"]]>
+                <![CDATA["Modul Testimonial"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.About.TestRunner@61df66b6]" started-at="2022-09-12T18:07:15 WIB" name="tearDownClass" finished-at="2022-09-12T18:07:17 WIB" duration-ms="2152" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:45:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:45:45 WIB" duration-ms="9151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add testimonial invalid data null"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:45:45 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:46:01 WIB" duration-ms="15850" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add testimonial invalid just foto"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //p[normalize-space()='Controller or its method is not found: {0}::{1}']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5JFS7KH', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31920, moz:profile: C:\Users\Ramma\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fe954d-020d-4233-a4bd-225be37e4e63
+*** Element info: {Using=xpath, value=//p[normalize-space()='Controller or its method is not found: {0}::{1}']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[normalize-space()='Controller or its method is not found: {0}::{1}']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-5JFS7KH', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31920, moz:profile: C:\Users\Ramma\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fe954d-020d-4233-a4bd-225be37e4e63
+*** Element info: {Using=xpath, value=//p[normalize-space()='Controller or its method is not found: {0}::{1}']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+at com.juaracoding.projectJC.pages.Testimonial.AlertFoto(Testimonial.java:135)
+at com.juaracoding.projectJC.Testimonial.TestTestimonial.cekAlertAdd(TestTestimonial.java:121)
+at ✽.cek alert add(file:///C:/Users/Ramma/Desktop/Juaracoding-KerjaPraktek/src/test/resources/features/Testimonial/02Testimonial.feature:53)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:46:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:46:13 WIB" duration-ms="12288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add testimonial invalid just name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:46:13 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:46:21 WIB" duration-ms="7668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add testimonial invalid just testimonial"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:46:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:46:24 WIB" duration-ms="2770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["add testimonial valid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:46:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-14T18:46:34 WIB" duration-ms="10210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["check data valid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Modul Testimonial"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.Testimonial.TestRunner@61df66b6]" started-at="2022-09-14T18:46:34 WIB" name="tearDownClass" finished-at="2022-09-14T18:46:36 WIB" duration-ms="2633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.juaracoding.projectJC.About.TestRunner -->
+      </class> <!-- com.juaracoding.projectJC.Testimonial.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

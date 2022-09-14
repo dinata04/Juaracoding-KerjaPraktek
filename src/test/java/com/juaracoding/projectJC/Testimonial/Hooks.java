@@ -28,7 +28,7 @@ public static ExtentReports reports = new ExtentReports("target/extent-reports.h
 	
 	@Before
 	public void setup() {
-		DriverSingleton.getInstance(Constants.CHROME);
+		DriverSingleton.getInstance(Constants.FIREFOX);
 		driver = DriverSingleton.getDriver();
 		TestScenarioTestimonial[] tests = TestScenarioTestimonial.values();
 		extentTest = reports.startTest(tests[Utils.testCount].getTestName());

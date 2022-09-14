@@ -7,6 +7,16 @@ Feature: Modul About
 
 
 
+
+
+
+
+
+
+
+
+
+
 #test tambah trainer-----------------------------------------------------
   Scenario: show about menu
     When click about menu
@@ -22,5 +32,8 @@ Feature: Modul About
 		
 	Scenario: check data
 		When search name "testTrainer11"
-
+		And navigate to jc
+		Then click about jc
+		And click last radio button jc
+		
 #-------------------------------------------------------------------------

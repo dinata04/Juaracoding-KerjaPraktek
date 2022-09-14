@@ -1,9 +1,12 @@
 package com.juaracoding.projectJC.About;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 
 import com.juaracoding.projectJC.About.Hooks;
 import com.juaracoding.projectJC.pages.About;
+import com.juaracoding.projectJC.utils.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -79,5 +82,37 @@ public class TestAbout {
 		extentTest.log(LogStatus.PASS, "search name");
 	}
 	
+	@And("navigate to jc")
+	public void navigateToJc() {
+		driver.get(Constants.URLTwo);
+		Hooks.delay(3);
+		extentTest.log(LogStatus.PASS, "navigate to jc");
+	}
+	
+	@Then("click about jc")
+	public void ClickAboutJc() {
+		Hooks.scroll(500);
+		Hooks.delay(1);
+		about.btnAboutJC();
+		extentTest.log(LogStatus.PASS, "click about jc");
+	}
+	
+	@And("click last radio button jc")
+	public void lastRadiobtn() {
+		Hooks.delay(2);
+		Hooks.scroll(1000);
+		Hooks.delay(1);
+		for(int i =0;i<6;i++) {
+			about.radioBtnAboutJc();
+		}
+		Hooks.delay(1);
+		assertEquals(about.profileTrainerJc(), true);
+		extentTest.log(LogStatus.PASS, "click last radio button jc");
+	}
+	
+	@Then("back to testimonial menu")
+	public void backToMenu() {
+		driver.navigate().back();
+	}
 	
 }
