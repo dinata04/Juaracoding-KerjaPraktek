@@ -44,6 +44,9 @@ public class ModulContactTamu {
 	
 	
 	//text validasi
+	@FindBy(xpath="//alert[@class='alert-success']")
+	private WebElement txtSuksesSend;
+	
 	@FindBy(xpath="//div[@class='invalid-feedback'][normalize-space()='The name field is required.']")
 	private WebElement txtNamaKosong;
 	
@@ -57,6 +60,8 @@ public class ModulContactTamu {
 	private WebElement txtSubjectKosong;
 	
 	public void clickBtnContact() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,700)");
 		btnContact.click();
 	}
 	
@@ -76,7 +81,14 @@ public class ModulContactTamu {
 		this.phoneNumber.sendKeys("081260911455");
 		this.subject.sendKeys("Test");
 		this.message.sendKeys("Mencoba Hal Baru");
+	}
+	
+	public void btnSendMessage() {
 		btnContact.click();
+	}
+	
+	public String getTxtSuksesSend() {
+		return txtSuksesSend.getText();
 	}
 	
 	//TCC.JC.178 => case mengisi nama dengan angka
