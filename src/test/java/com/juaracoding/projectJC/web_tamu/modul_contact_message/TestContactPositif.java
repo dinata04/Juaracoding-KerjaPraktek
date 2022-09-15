@@ -1,5 +1,7 @@
 package com.juaracoding.projectJC.web_tamu.modul_contact_message;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 
 import com.juaracoding.projectJC.pages.ModulContactTamu;
@@ -25,12 +27,12 @@ public class TestContactPositif {
 	@When("User go to web JC Contact Tamu")
 	public void user_go_to_web_JC_contact_tamu() {
 		driver.get(Constants.URLTHREE);
-		HooksContactPositif.scroll(700);
-		extentTest.log(LogStatus.PASS, "User go to web JC");	
+		extentTest.log(LogStatus.PASS, "User go to web JC Contact Tamu");	
 	}
 	
 	@And("User input data contact")
 	public void user_input_data_contact() {
+		HooksContactPositif.scroll(350);
 		contactTamu.formFull();
 		extentTest.log(LogStatus.PASS, "User input data contact");
 	}
@@ -44,8 +46,8 @@ public class TestContactPositif {
 	
 	@Then("Alert valid message")
 	public void alert_valid_message() {
-		HooksContactPositif.scroll(200);
-		System.out.println(contactTamu.getTxtSuksesSend());
-		extentTest.log(LogStatus.PASS, "User Valid send message");
+		HooksContactPositif.scroll(350);
+		assertEquals(contactTamu.getTxtSuksesSend(),"Thank You for contact us");
+		extentTest.log(LogStatus.PASS, "Alert valid message");
 	}
 }
