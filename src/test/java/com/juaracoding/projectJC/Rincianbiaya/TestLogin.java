@@ -1,4 +1,4 @@
-package com.juaracoding.projectJC.step_definitions;
+package com.juaracoding.projectJC.Rincianbiaya;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
