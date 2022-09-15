@@ -60,8 +60,6 @@ public class ModulContactTamu {
 	private WebElement txtSubjectKosong;
 	
 	public void clickBtnContact() {
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,700)");
 		btnContact.click();
 	}
 	
@@ -76,11 +74,11 @@ public class ModulContactTamu {
 	//TCC.JC.188 => case mengisi message
 	//TCC.JC.190 => case send message ke contact
 	public void formFull() {
-		this.fullname.sendKeys("erbina");
-		this.email.sendKeys("erbinaselviia@gmail.com");
-		this.phoneNumber.sendKeys("081260911455");
-		this.subject.sendKeys("Test");
-		this.message.sendKeys("Mencoba Hal Baru");
+		fullname.sendKeys("erbina");
+		email.sendKeys("erbinaselviia@gmail.com");
+		phoneNumber.sendKeys("081260911455");
+		subject.sendKeys("Test");
+		message.sendKeys("Mencoba Hal Baru");
 	}
 	
 	public void btnSendMessage() {

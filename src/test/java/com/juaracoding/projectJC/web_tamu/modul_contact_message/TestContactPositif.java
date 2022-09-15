@@ -22,33 +22,29 @@ public class TestContactPositif {
 			extentTest = HooksContactPositif.extentTest;
 		}
 	
-	@When("User go to web JC")
-	public void user_go_to_web_JC() {
-		driver.get(Constants.URLTwo);
-		extentTest.log(LogStatus.PASS, "User go to web JC");
-		
+	@When("User go to web JC Contact Tamu")
+	public void user_go_to_web_JC_contact_tamu() {
+		driver.get(Constants.URLTHREE);
+		HooksContactPositif.scroll(700);
+		extentTest.log(LogStatus.PASS, "User go to web JC");	
 	}
 	
 	@And("User input data contact")
 	public void user_input_data_contact() {
-		//HooksContactPositif.scroll(600);
-		contactTamu.clickBtnContact();
-		HooksContactPositif.scroll(500);
-		System.out.println(contactTamu.getTxtJudulContact());
 		contactTamu.formFull();
 		extentTest.log(LogStatus.PASS, "User input data contact");
 	}
 	
 	@And("User clik button send message")
 	public void user_clik_button_send_message() {
-		HooksContactPositif.delay(2);
+		HooksContactPositif.delay(1);
 		contactTamu.btnSendMessage();
 		extentTest.log(LogStatus.PASS, "User clik button send message");
 	}
 	
-	@Then("User Valid send message")
-	public void user_valid_send_message() {
-		HooksContactPositif.scroll(400);
+	@Then("Alert valid message")
+	public void alert_valid_message() {
+		HooksContactPositif.scroll(200);
 		System.out.println(contactTamu.getTxtSuksesSend());
 		extentTest.log(LogStatus.PASS, "User Valid send message");
 	}
