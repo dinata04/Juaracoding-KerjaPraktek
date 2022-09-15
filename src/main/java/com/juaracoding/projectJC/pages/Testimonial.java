@@ -42,7 +42,7 @@ public class Testimonial {
 	private WebElement searchNama;
 	@FindBy(xpath = "//b[normalize-space()='Total Search : 1 Data']")// ganti nama testernya ke nama
 	private WebElement cekPesertaAdd;
-	@FindBy(xpath = "//figure[@class='col-xl-3 col-sm-6']")
+	@FindBy(xpath = "//figure[@class='col-xl-3 col-sm-6']") //
 	private WebElement openPeserta;
 	@FindBy(xpath = "//input[@id='filename']")
 	private WebElement inputFileUlang;

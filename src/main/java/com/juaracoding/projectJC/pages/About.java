@@ -1,6 +1,5 @@
 package com.juaracoding.projectJC.pages;
 
-import org.jsoup.select.Evaluator.IsEmpty;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.juaracoding.projectJC.drivers.DriverSingleton;
 
-import freemarker.core.ReturnInstruction.Return;
 
 public class About {
 	
@@ -41,7 +39,7 @@ private WebDriver driver;
 	private WebElement searchNama;
 	@FindBy(xpath = "//b[normalize-space()='Total Search : 1 Data']")
 	private WebElement cekAddtrainer;
-	@FindBy(xpath = "//figure[2]//a[1]//img[1]")
+	@FindBy(xpath = "//figure[@class='col-xl-3 col-sm-6']")
 	private WebElement openTrainer;
 	@FindBy(xpath = "//input[@id='filename']")
 	private WebElement inputFileUlang;
@@ -186,5 +184,17 @@ private WebDriver driver;
 	
 	public boolean profileTrainerJc() {						//	ini boolean
 		return ProfileTrainerJc.isDisplayed();
+	}
+	
+	public void ClearNamaEdit() {
+		inputNamaUlang.clear();
+	}
+	
+	public void ClearJabatanEdit() {
+		inputJabatan.clear();
+	}
+	
+	public void ClearTextProfileEdit() {
+		txtProfile.clear();
 	}
 }

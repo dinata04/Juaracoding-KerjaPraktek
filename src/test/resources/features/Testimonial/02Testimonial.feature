@@ -1,3 +1,5 @@
+#	sebelum menjalankan harus ada peserta dengan nama "tester fail 1" dan "tester fail 2"
+#	Dantidak boleh double trainer dengan nama sama.
 Feature: Modul Testimonial
 	
 	# 1.pass--------------------------------------------------------------------
@@ -73,14 +75,14 @@ Feature: Modul Testimonial
 	
 	Scenario: add testimonial valid
 		And input file "C:\Users\Ramma\Pictures\Wallpepar\logo steam\nursultan tulyakbay.jpeg"
-		And input name "testerTestimonial12"
+		And input name "testerTestimonial berhasil"
 		And select publish 0
 		And input text testimonial "ini isi testimonialnya"
 		And select rating 4
 		Then click save
 		
 	Scenario: check data valid
-		When search name "testerTestimonial12"
+		When search name "testerTestimonial berhasil"
 		And navigate to jc
 		Then cek testimonial jc
 		
