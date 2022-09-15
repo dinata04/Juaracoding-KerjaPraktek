@@ -1,4 +1,4 @@
-package com.juaracoding.projectJC.step_definitions;
+package com.juaracoding.projectJC.Benefit;
 
 import static org.testng.Assert.assertEquals;
 

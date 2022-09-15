@@ -28,12 +28,6 @@ public class Login {
 	@FindBy(xpath = "//li[contains(text(),'Dashboard')]")
 	private WebElement txtDashboard;
 	
-	@FindBy(xpath = "//a[@class='sidebar-link sidebar-title active']")
-	private WebElement homejc;
-	
-	@FindBy(xpath = "//a[normalize-space()='Benefit']")
-	private WebElement benefit;
-	
 	public void login(String username, String password) {
 		this.username.sendKeys(username);
 		this.password.sendKeys(password);
