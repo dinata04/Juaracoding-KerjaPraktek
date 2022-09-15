@@ -1,4 +1,4 @@
-package com.juaracoding.projectJC.step_definitions;
+package com.juaracoding.projectJC.Step_defitions;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

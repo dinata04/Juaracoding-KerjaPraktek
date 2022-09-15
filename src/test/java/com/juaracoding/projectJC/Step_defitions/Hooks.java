@@ -1,4 +1,4 @@
-package com.juaracoding.projectJC.step_definitions;
+package com.juaracoding.projectJC.Step_defitions;
 
 import java.io.IOException;
 

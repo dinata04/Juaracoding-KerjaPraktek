@@ -6,7 +6,9 @@ public enum TestScenarios {
 	T2("Invalid username"),
 	T3("invalid password"),
 	T4("username & password null"),
-	T5("User valid login");
+	T5("User valid login"),
+	T6("Valid add blog ");
+	
 	
 	
 	private String testName;
