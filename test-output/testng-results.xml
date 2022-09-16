@@ -1,111 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-15T09:44:53 WIB" name="Default suite" finished-at="2022-09-15T09:45:16 WIB" duration-ms="22501">
+  <suite started-at="2022-09-16T19:14:00 WIB" name="Default suite" finished-at="2022-09-16T19:14:45 WIB" duration-ms="45446">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-15T09:44:53 WIB" name="Default test" finished-at="2022-09-15T09:45:16 WIB" duration-ms="22501">
-      <class name="com.juaracoding.projectJC.Login.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:44:53 WIB" name="setUpClass" finished-at="2022-09-15T09:44:54 WIB" duration-ms="693" status="PASS">
+    <test started-at="2022-09-16T19:14:00 WIB" name="Default test" finished-at="2022-09-16T19:14:45 WIB" duration-ms="45446">
+      <class name="com.juaracoding.projectJC.ModulBlog.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e]" started-at="2022-09-16T19:14:00 WIB" name="setUpClass" finished-at="2022-09-16T19:14:00 WIB" duration-ms="729" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2e7157c7]]>
+                <![CDATA[org.testng.TestRunner@3811510]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:44:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T09:45:01 WIB" duration-ms="7268" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e]" started-at="2022-09-16T19:14:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-16T19:14:10 WIB" duration-ms="9772" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Invalid username password"]]>
+                <![CDATA["Login"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Admin"]]>
+                <![CDATA["Modul Blog"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:45:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T09:45:03 WIB" duration-ms="2433" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e]" started-at="2022-09-16T19:14:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-16T19:14:18 WIB" duration-ms="7765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Invalid username"]]>
+                <![CDATA["show menu blog"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Admin"]]>
+                <![CDATA["Modul Blog"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:45:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T09:45:06 WIB" duration-ms="2752" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e]" started-at="2022-09-16T19:14:18 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-16T19:14:42 WIB" duration-ms="23717" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Invalid password"]]>
+                <![CDATA["valid add Blog"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Admin"]]>
+                <![CDATA["Modul Blog"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1238, 1081)
+  (Session info: chrome=105.0.5195.126)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-R3P24O8', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1238, 1081)
+  (Session info: chrome=105.0.5195.126)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-R3P24O8', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at com.juaracoding.projectJC.pages.Blog.clickBtnSimpan(Blog.java:86)
+at com.juaracoding.projectJC.ModulBlog.TestBlog.btnSimpan(TestBlog.java:82)
+at ✽.click button simpan(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:45:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T09:45:10 WIB" duration-ms="3392" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Username and password null"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Admin"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:45:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-15T09:45:13 WIB" duration-ms="3521" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User valid login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Admin"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.Login.TestRunner@2fb3536e]" started-at="2022-09-15T09:45:13 WIB" name="tearDownClass" finished-at="2022-09-15T09:45:16 WIB" duration-ms="2381" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e]" started-at="2022-09-16T19:14:42 WIB" name="tearDownClass" finished-at="2022-09-16T19:14:45 WIB" duration-ms="3353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.juaracoding.projectJC.Login.TestRunner -->
+      </class> <!-- com.juaracoding.projectJC.ModulBlog.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

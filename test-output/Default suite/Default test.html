@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 15 09:44:53 WIB 2022</td>
+<td>Started on:</td><td>Fri Sep 16 19:14:00 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22501 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45446 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,78 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "valid add Blog", "Modul Blog"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1238, 1081)
+  (Session info: chrome=105.0.5195.126)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.clickBtnSimpan(Blog.java:86)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.btnSimpan(TestBlog.java:82)
+	at ✽.click button simpan(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace805536380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805536380'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1238, 1081)
+  (Session info: chrome=105.0.5195.126)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.clickBtnSimpan(Blog.java:86)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.btnSimpan(TestBlog.java:82)
+	at ✽.click button simpan(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:16)
+</pre></div></td>
+<td>23</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,30 +147,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.projectJC.Login.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.Login.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid username", "Login Admin"</td>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login", "Modul Blog"</td>
 <td></td>
-<td>2</td>
-<td>com.juaracoding.projectJC.Login.TestRunner@2fb3536e</td></tr>
+<td>9</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
 <tr>
-<td title='com.juaracoding.projectJC.Login.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.Login.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Username and password null", "Login Admin"</td>
-<td></td>
-<td>3</td>
-<td>com.juaracoding.projectJC.Login.TestRunner@2fb3536e</td></tr>
-<tr>
-<td title='com.juaracoding.projectJC.Login.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.Login.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User valid login", "Login Admin"</td>
-<td></td>
-<td>3</td>
-<td>com.juaracoding.projectJC.Login.TestRunner@2fb3536e</td></tr>
-<tr>
-<td title='com.juaracoding.projectJC.Login.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.Login.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid password", "Login Admin"</td>
-<td></td>
-<td>2</td>
-<td>com.juaracoding.projectJC.Login.TestRunner@2fb3536e</td></tr>
-<tr>
-<td title='com.juaracoding.projectJC.Login.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.Login.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid username password", "Login Admin"</td>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "show menu blog", "Modul Blog"</td>
 <td></td>
 <td>7</td>
-<td>com.juaracoding.projectJC.Login.TestRunner@2fb3536e</td></tr>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
 </table><p>
 </body>
 </html>

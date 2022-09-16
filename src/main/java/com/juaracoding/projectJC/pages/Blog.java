@@ -18,7 +18,7 @@ private WebDriver driver;
 	}
 	
 	@FindBy(xpath = "//span[normalize-space()='Blog']")
-	private WebElement menuBlog;
+	private WebElement btnBlog;
 	
 	@FindBy(xpath = "//a[@class='btn btn-gradient']")
 	private WebElement btnAdd;
@@ -47,7 +47,7 @@ private WebDriver driver;
 	
 //	Add Blog
 	public void clickMenuBlog() {
-		menuBlog.click();
+		btnBlog.click();
 	}
 	
 	public void clickBtnAdd() {
@@ -62,7 +62,7 @@ private WebDriver driver;
 		inputjudul.sendKeys(judul);
 	}
 	
-	public void selectPulish(String value) {
+	public void selectPublish(String value) {
 		Select select = new Select(selectPublish);
 		select.selectByValue(value);
 		

@@ -1,13 +1,18 @@
-Feature: Blog
+Feature: Modul Blog
 
-	Scenario: Valid add blog
+	Scenario: Login
+		When User go to web JC
+		And User login
+		
+		
+	# Menampilkan Halaman Blog
+	Scenario: show menu blog
 		When click menu blog
-		And click button tambah
-		And choose foto
-		And input Judul
-		And select publish "Active"
-		And select set to home "ya"
-		And input content preview
-		And input content
+		
+	# Case Tambah Blog Positive
+	Scenario: valid add Blog
+		When click button tambah
+		And input form add
 		And click button simpan
-		Then valid add blog
+		
+		
