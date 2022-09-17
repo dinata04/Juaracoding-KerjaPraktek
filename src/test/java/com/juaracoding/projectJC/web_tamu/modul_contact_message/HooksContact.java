@@ -19,12 +19,12 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class HooksContactPositif {
+public class HooksContact {
 
 	public static WebDriver driver;
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/extent-reports.html");
-	
+
 	@Before
 	public void setup() {
 		DriverSingleton.getInstance(Constants.CHROME);
@@ -33,37 +33,36 @@ public class HooksContactPositif {
 		extentTest = reports.startTest(tests[Utils.testCount].getTestName());
 		Utils.testCount++;
 	}
-	
+
 	@AfterStep
 	public void getResultStatus(Scenario scenario) throws IOException {
-		if(scenario.isFailed()) {
+		if (scenario.isFailed()) {
 			String screenshotPath = Utils.getScreenshot(driver, scenario.getName().replace(" ", "_"));
-			extentTest.log(LogStatus.FAIL, scenario.getName()+"\n"
-					+extentTest.addScreenCapture(screenshotPath));;
+			extentTest.log(LogStatus.FAIL, scenario.getName() + "\n" + extentTest.addScreenCapture(screenshotPath));
+			;
 		}
 	}
-	
+
 	@After
 	public static void closeObject() {
 		reports.endTest(extentTest);
 		reports.flush();
-	} 
-	
+	}
+
 	@AfterAll
 	public static void closeBrowser() {
 		delay(2);
 		DriverSingleton.closeObjectInstance();
 	}
-	
+
 	static void delay(int seconds) {
 		try {
-			Thread.sleep(seconds*1000);
+			Thread.sleep(seconds * 1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-	
+
 	static void scroll(int vertical) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0," + vertical + ")");

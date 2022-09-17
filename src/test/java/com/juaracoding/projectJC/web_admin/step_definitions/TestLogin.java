@@ -24,7 +24,7 @@ public class TestLogin {
 		extentTest = Hooks.extentTest;
 	}
 	
-//	Valid Login
+	//	Valid Login
 	
 	@When("User go to web JC")
 	public void user_go_to_web_JC() {
@@ -35,7 +35,9 @@ public class TestLogin {
 	@And("User input username password")
 	public void user_input_username_password() {
 		Hooks.delay(1);
-		login.login("ucen1315@gmail.com", "a");
+		login.txtUsername("ucen1315@gmail.com");
+		Hooks.delay(5);
+		login.txtPassword("a");
 		extentTest.log(LogStatus.PASS, "User input username password");
 	}
 	

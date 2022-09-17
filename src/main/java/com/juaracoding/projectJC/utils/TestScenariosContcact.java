@@ -2,7 +2,7 @@ package com.juaracoding.projectJC.utils;
 
 public enum TestScenariosContcact {
 
-	T1("Tambah Data Contact");
+	T1("Add Data Contact");
 	
 	private String testName;
 
