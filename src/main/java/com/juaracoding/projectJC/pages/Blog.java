@@ -1,5 +1,6 @@
 package com.juaracoding.projectJC.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +18,7 @@ private WebDriver driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+//	Add Blog
 	@FindBy(xpath = "//span[normalize-space()='Blog']")
 	private WebElement btnBlog;
 	
@@ -44,6 +46,45 @@ private WebDriver driver;
 	@FindBy(xpath = "//input[@name='mysubmit']")
 	private WebElement btnSimpan;
 	
+//	Edit Blog
+	@FindBy(xpath = "//h4[normalize-space()='Belajar SQA1']")
+	private WebElement btnEditBlog;
+	
+	@FindBy(xpath = "//input[@value='Pilih Gambar Ulang']")
+	private WebElement btnPilihGmbrUlang;
+	
+	@FindBy(xpath = "//textarea[@name='body_preview']")
+	private WebElement isiContentPreviewUlang;
+	
+	@FindBy(xpath = "//div[@role='textbox']")
+	private WebElement isiContentUlang;
+	
+//	Search Blog
+	@FindBy(xpath = "//input[@placeholder='Search Judul']")
+	private WebElement searchBlog;
+	
+	
+//	Alert validation
+	@FindBy(xpath = "//alert[@class='alert alert-success']")
+	private WebElement alsertSuccess;
+	
+	@FindBy(xpath = "//b[normalize-space()='Total Search : 2 Data']")
+	private WebElement txtSearch;
+	
+	@FindBy(xpath = "//div[@class='alert alert-danger mt-2']")
+	private WebElement alertForm;
+	
+	@FindBy(xpath = "//h4[normalize-space()='Belajar SQA1']")
+	private WebElement txtSuccessEdit;
+	
+//	search blog
+	public void searchBlog(String keyword) {
+		searchBlog.sendKeys(keyword, Keys.ENTER);
+	}
+	
+	public String getTxtSearch() {
+		return txtSearch.getText();
+	}
 	
 //	Add Blog
 	public void clickMenuBlog() {
@@ -85,5 +126,36 @@ private WebDriver driver;
 	public void clickBtnSimpan() {
 		btnSimpan.click();
 	}
+	
+//	edit
+	public void clickBtnGmbrUlang() {
+		btnPilihGmbrUlang.click();
+	}
+	
+	public void clickBtnEdit() {
+		btnEditBlog.click();
+	}
+	
+	public void clearContentPreview() {
+		isiContentPreviewUlang.clear();
+	}
+	
+	public void clearContent() {
+		isiContentUlang.clear();
+	}
+	
+//	Alert validation
+	public String viewAlertSuccess() {
+		return alsertSuccess.getText();
+	}
+	
+	public String viewAlertForm() {
+		return alertForm.getText();
+	}
+	
+	public String getTxtSuccessEdit() {
+		return txtSuccessEdit.getText();
+	}
+	
 	
 }

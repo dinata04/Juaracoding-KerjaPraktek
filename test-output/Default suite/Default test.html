@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 16 19:14:00 WIB 2022</td>
+<td>Started on:</td><td>Sun Sep 18 01:43:21 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45446 ms)</td>
+<tr><td>Total time:</td><td>136 seconds (136042 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "valid add Blog", "Modul Blog"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1238, 1081)
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "edit content preview null", "Modul Blog"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger mt-2&apos;]&quot;}
   (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50e3e08e185bdd446afd343c5d3c4b50
+*** Element info: {Using=xpath, value=//div[@class=&apos;alert alert-danger mt-2&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,25 +96,26 @@ Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at com.juaracoding.projectJC.pages.Blog.clickBtnSimpan(Blog.java:86)
-	at com.juaracoding.projectJC.ModulBlog.TestBlog.btnSimpan(TestBlog.java:82)
-	at ✽.click button simpan(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:16)
-</pre></div><a href='#' onClick='toggleBox("stack-trace805536380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace805536380'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1238, 1081)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.viewAlertForm(Blog.java:153)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.validationSuccessEdit1(TestBlog.java:354)
+	at ✽.validation success edit1(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:62)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1296450832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1296450832'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger mt-2&apos;]&quot;}
   (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54804}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50e3e08e185bdd446afd343c5d3c4b50
+*** Element info: {Using=xpath, value=//div[@class=&apos;alert alert-danger mt-2&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -124,19 +127,150 @@ Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at com.juaracoding.projectJC.pages.Blog.clickBtnSimpan(Blog.java:86)
-	at com.juaracoding.projectJC.ModulBlog.TestBlog.btnSimpan(TestBlog.java:82)
-	at ✽.click button simpan(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.viewAlertForm(Blog.java:153)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.validationSuccessEdit1(TestBlog.java:354)
+	at ✽.validation success edit1(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:62)
 </pre></div></td>
-<td>23</td>
+<td>20</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "valid add Blog", "Modul Blog"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//alert[@class=&apos;alert alert-success&apos;]&quot;}
+  (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50e3e08e185bdd446afd343c5d3c4b50
+*** Element info: {Using=xpath, value=//alert[@class=&apos;alert alert-success&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.viewAlertSuccess(Blog.java:149)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.validationSuccessAdd(TestBlog.java:445)
+	at ✽.validation success add(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:76)
+</pre></div><a href='#' onClick='toggleBox("stack-trace798695894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798695894'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//alert[@class=&apos;alert alert-success&apos;]&quot;}
+  (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50e3e08e185bdd446afd343c5d3c4b50
+*** Element info: {Using=xpath, value=//alert[@class=&apos;alert alert-success&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.viewAlertSuccess(Blog.java:149)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.validationSuccessAdd(TestBlog.java:445)
+	at ✽.validation success add(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:76)
+</pre></div></td>
+<td>21</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "edit content null", "Modul Blog"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger mt-2&apos;]&quot;}
+  (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50e3e08e185bdd446afd343c5d3c4b50
+*** Element info: {Using=xpath, value=//div[@class=&apos;alert alert-danger mt-2&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.viewAlertForm(Blog.java:153)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.validationSuccessEdit2(TestBlog.java:399)
+	at ✽.validation success edit2(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace904848961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace904848961'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger mt-2&apos;]&quot;}
+  (Session info: chrome=105.0.5195.126)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-R3P24O8&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.126, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Hdinataa\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 50e3e08e185bdd446afd343c5d3c4b50
+*** Element info: {Using=xpath, value=//div[@class=&apos;alert alert-danger mt-2&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.juaracoding.projectJC.pages.Blog.viewAlertForm(Blog.java:153)
+	at com.juaracoding.projectJC.ModulBlog.TestBlog.validationSuccessEdit2(TestBlog.java:399)
+	at ✽.validation success edit2(file:///D:/Eclipse/com.juaracoding.projectJC/src/test/resources/features/Blog.feature:69)
+</pre></div></td>
+<td>20</td>
 <td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -147,14 +281,49 @@ Session ID: 8a697f467bc30808c63f5d0e7eb7c3aa
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "valid edit blog", "Modul Blog"</td>
+<td></td>
+<td>10</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
 <td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login", "Modul Blog"</td>
+<td></td>
+<td>8</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "no input content", "Modul Blog"</td>
 <td></td>
 <td>9</td>
 <td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
 <tr>
 <td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "show menu blog", "Modul Blog"</td>
 <td></td>
-<td>7</td>
+<td>4</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "no choose foto", "Modul Blog"</td>
+<td></td>
+<td>9</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "no input judul", "Modul Blog"</td>
+<td></td>
+<td>12</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "search blog", "Modul Blog"</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "no input content preview", "Modul Blog"</td>
+<td></td>
+<td>9</td>
+<td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.projectJC.ModulBlog.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.ModulBlog.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "no input form", "Modul Blog"</td>
+<td></td>
+<td>3</td>
 <td>com.juaracoding.projectJC.ModulBlog.TestRunner@2fb3536e</td></tr>
 </table><p>
 </body>
