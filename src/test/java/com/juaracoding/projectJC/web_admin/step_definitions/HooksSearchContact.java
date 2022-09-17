@@ -7,7 +7,8 @@ import org.openqa.selenium.WebDriver;
 
 import com.juaracoding.projectJC.drivers.DriverSingleton;
 import com.juaracoding.projectJC.utils.Constants;
-import com.juaracoding.projectJC.utils.TestScenarios;
+import com.juaracoding.projectJC.utils.TestScenarioSearch;
+import com.juaracoding.projectJC.utils.TestScenariosContcact;
 import com.juaracoding.projectJC.utils.Utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -19,18 +20,18 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-public class Hooks {
-	
-public static WebDriver driver;
-public static ExtentTest extentTest;
-public static ExtentReports reports = new ExtentReports("target/extent-reports.html");
+public class HooksSearchContact {
+
+	public static WebDriver driver;
+	public static ExtentTest extentTest;
+	public static ExtentReports reports = new ExtentReports("target/extent-reports.html");
 
 	
 	@Before
 	public void setup() {
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		TestScenarios[] tests = TestScenarios.values();
+		TestScenarioSearch[] tests = TestScenarioSearch.values();
 		extentTest = reports.startTest(tests[Utils.testCount].getTestName());
 		Utils.testCount++;
 	}
@@ -69,5 +70,4 @@ public static ExtentReports reports = new ExtentReports("target/extent-reports.h
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0," + vertical + ")");
 	}
-
 }

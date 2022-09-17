@@ -52,6 +52,9 @@ public class Login {
 	// menu contact tamu
 	@FindBy(xpath = "//span[normalize-space()='Contact Messages']")
 	private WebElement btnContact;
+	
+	@FindBy(xpath = "//h3[normalize-space()='Data Contact Messages']")
+	private WebElement txtMenuContact;
 
 	@FindBy(xpath = "//input[@placeholder='Search']")
 	private WebElement btnSearch;
@@ -59,9 +62,16 @@ public class Login {
 	@FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[1]")
 	private WebElement txtHasilSearch;
 	
+	@FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[1]")
+	private WebElement txtResultName;
+	
 	//button contact
 	public void clickBtnContact() {
 		btnContact.click();
+	}
+	
+	public String getTxtMenuContact() {
+		return txtMenuContact.getText();
 	}
 	
 	//seacrh data
@@ -71,5 +81,9 @@ public class Login {
 	
 	public String getTxtHasilSearch() {
 		return txtHasilSearch.getText();
+	}
+	
+	public String getTxtResultName() {
+		return txtResultName.getText();
 	}
 }

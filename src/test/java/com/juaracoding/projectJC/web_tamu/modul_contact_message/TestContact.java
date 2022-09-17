@@ -37,13 +37,13 @@ public class TestContact {
 	public void user_input_data_contact() {
 		HooksContact.scroll(350);
 		HooksContact.delay(5);
-		contactTamu.txtName("magang");
+		contactTamu.txtName("praktik");
 		HooksContact.delay(5);
-		contactTamu.txtEmail("magang@gmail.com");
+		contactTamu.txtEmail("praktik@gmail.com");
 		HooksContact.delay(5);
 		contactTamu.txtNumber("123");
 		HooksContact.delay(5);
-		contactTamu.txtSubject("Coba");
+		contactTamu.txtSubject("praktik");
 		HooksContact.delay(5);
 		contactTamu.txtMessage("Coba Lagi");
 		HooksContact.delay(5);
@@ -89,9 +89,9 @@ public class TestContact {
 	@Then("User search data")
 	public void user_search_data() {
 		HooksContact.delay(5);
-		login.searchData("magang");
+		login.searchData("praktik");
 		HooksContact.delay(5);
-		assertEquals(login.getTxtHasilSearch(),"magang");
+		assertEquals(login.getTxtHasilSearch(),"praktik");
 		System.out.println(login.getTxtHasilSearch());
 		HooksContact.delay(5);
 		extentTest.log(LogStatus.PASS, "User search data");
