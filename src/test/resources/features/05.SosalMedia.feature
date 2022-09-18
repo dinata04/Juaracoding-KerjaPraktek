@@ -7,8 +7,7 @@ Feature: Modul Sosial Media
 		And User sign in
 		And User clik button sign in
 		And User get validasi succeed sign in
-		And User go to home jc
-		And User click button sosial media
+		And User go to home jc and click button sosial media
 		Then User get validasi sosial media
 		
 	#1.failed => tidak masukan link facebook ---------------------------------------------------------------------
