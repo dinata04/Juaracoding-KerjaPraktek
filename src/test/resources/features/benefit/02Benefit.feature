@@ -3,13 +3,25 @@ Feature: Modul Benefit
 
 	
 
-# test tambah data--------------------------------------------------------
+# fail test tambah data--------------------------------------------------------
+Scenario: show benefit menu fail
+		When click sub menu
+		And click benefit menu
+		
+		Scenario: add benefit fail
+		When click add benefit
+		And input text judul 1 ""
+		And input isi deskripsi 1 ""
+		And select publish 1
+		Then click save
+		
+# pass test tambah data--------------------------------------------------------
 Scenario: show benefit menu
 		When click sub menu
 		And click benefit menu
 		
 		Scenario: add benefit
-		When click add
+		When click add benefit
 		And input text judul 1 "testing123"
 		And input isi deskripsi 1 "tester12345asd"
 		And input text judul 2 "testing1234"
@@ -27,7 +39,6 @@ Scenario: show benefit menu
 		And edit text judul 1 "testing123123123"
 		And select publish 2
 		Then click save
-		
 		
 	Scenario: check data
 		When click sub menu

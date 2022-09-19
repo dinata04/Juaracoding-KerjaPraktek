@@ -16,6 +16,26 @@ private WebDriver driver;
 		this.driver = DriverSingleton.getDriver();
 		PageFactory.initElements(driver, this);
 	}
+	@FindBy(xpath = "//a[@class='sidebar-link sidebar-title']")
+	private WebElement subMenufail;
+	
+	@FindBy(xpath = "//a[normalize-space()='Benefit']")
+	private WebElement btnBenefitfail;
+	
+	@FindBy(xpath = "//a[@class='btn btn-gradient']")
+	private WebElement addBenefitfail;
+	
+	@FindBy(xpath = "//input[@id='judul_1']")
+	private WebElement inputJudul1fail;
+	
+	@FindBy(xpath = "//textarea[@name='deskripsi_1']")
+	private WebElement txtDeskripsi1fail;
+	
+	@FindBy(xpath = "//select[@id='exampleFormControlSelect9']")
+	private WebElement slctPublishfail;
+	
+	@FindBy(xpath = "//input[@name='mysubmit']")
+	private WebElement btnSimpanfail;
 	
 	
 	@FindBy(xpath = "//a[@class='sidebar-link sidebar-title']")
@@ -75,10 +95,33 @@ private WebDriver driver;
 	@FindBy(xpath = "//a[normalize-space()='Benefit']")
 	private WebElement btnBenefit1;
 	
-	@FindBy(xpath = "//input[@placeholder='Search']")
-	private WebElement searchJudul;
+	//@FindBy(xpath = "//input[@placeholder='Search']")
+	//private WebElement searchJudul;
 
 	private Select selectpublishedit;
+	
+	public void ButtonSubMenufail() {
+		subMenu.click();
+	}
+	public void ButtonBenefitfail() {
+		btnBenefit.click();
+	}
+	public void ButtonAddfail() {
+		addBenefit.click();
+	}
+	public void inputJudul1fail(String judul) {
+		inputJudul1.sendKeys(judul);		
+	}
+	public void inputTxtDeskripsi1fail(String text) {
+		txtDeskripsi1.sendKeys(text);		
+	}
+	public void selectPublishfail(int index) {
+		Select selectpublish = new Select(slctPublish);
+		selectpublish.selectByIndex(index);
+	}
+	public void ButtonSimpanfail() {
+		btnSimpan.click();
+	}
 	
 	public void ButtonSubMenu() {
 		subMenu.click();
@@ -133,12 +176,7 @@ private WebDriver driver;
 	public void ButtonSimpanedit() {
 		btnSimpanedit.click();		
 	}
-	public void ButtonSubMenu1() {
-		subMenu1.click();
-	}
-	public void ButtonBenefit1() {
-		btnBenefit1.click();
-	}
+	
 	//public void searchJudul(String judul) {
 		//searchJudul.sendKeys(judul,Keys.ENTER);		
 	//}
