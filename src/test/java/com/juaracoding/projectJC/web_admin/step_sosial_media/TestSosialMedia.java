@@ -63,7 +63,8 @@ public class TestSosialMedia {
 	@And("User go to home jc and click button sosial media")
 	public void user_go_to_home_jc_and_click_button_sosial_media() {
 		HooksSosialMedia.delay(3);
-		sosialMedia.pilihMenu("Sosial Media", 3);
+//		sosialMedia.pilihMenu("Sosial Media", 3);
+		driver.get(Constants.URLSOSMED);
 		extentTest.log(LogStatus.PASS, "User go to home jc and click button sosial media");
 	}
 	
@@ -79,25 +80,29 @@ public class TestSosialMedia {
 	
 	@When("User not input link facebook")
 	public void user_not_input_link_facebook() {
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("081234567890");
 		extentTest.log(LogStatus.PASS, "User not input link facebook");
 	}
 	
 	@And("User click save one")
 	public void user_click_save_one() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save one");
 	}
@@ -114,24 +119,28 @@ public class TestSosialMedia {
 	
 	@When("User not input link instagram")
 	public void user_not_input_link_instagram() {
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("081234567890");
 		extentTest.log(LogStatus.PASS, "User not input link instagram");
 	}
 	
 	@And("User click save two")
 	public void user_click_save_two() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(200);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save two");
 	}
@@ -139,7 +148,8 @@ public class TestSosialMedia {
 	@Then("User get validasi two")
 	public void user_get_validasi_two() {
 		HooksSosialMedia.delay(2);
-		assertEquals(sosialMedia.getValidasiIg(),"Data berhasil di update");
+		assertEquals(sosialMedia.getValidasiIg(),"Harap isi instagram");
+//		assertEquals(sosialMedia.getValidasiIg(),"Data berhasil di update");
 		System.out.println(sosialMedia.getValidasiIg());
 		extentTest.log(LogStatus.PASS, "User get validasi two");
 	}
@@ -149,17 +159,20 @@ public class TestSosialMedia {
 	@When("User not input link youtube")
 	public void user_not_input_link_youtube() {
 		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(50);
+		driver.get(Constants.URLSOSMED);
 		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
 		HooksSosialMedia.delay(3);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
 		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("");
 		HooksSosialMedia.delay(3);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("081234567890");
 		extentTest.log(LogStatus.PASS, "User not input link youtube");
 	}
@@ -167,6 +180,8 @@ public class TestSosialMedia {
 	@And("User click save three")
 	public void user_click_save_three() {
 		HooksSosialMedia.delay(2);
+		HooksSosialMedia.scroll(200);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save three");
 	}
@@ -174,7 +189,8 @@ public class TestSosialMedia {
 	@Then("User get validasi three")
 	public void user_get_validasi_three() {
 		HooksSosialMedia.delay(2);
-		assertEquals(sosialMedia.getValidasiYt(),"Data berhasil di update");
+		assertEquals(sosialMedia.getValidasiYt(),"Harap isi youtube");
+//		assertEquals(sosialMedia.getValidasiYt(),"Data berhasil di update");
 		System.out.println(sosialMedia.getValidasiYt());
 		extentTest.log(LogStatus.PASS, "User get validasi three");
 	}
@@ -183,32 +199,37 @@ public class TestSosialMedia {
 	
 	@When("User not input number whatsapp")
 	public void user_not_input_number_whatsapp() {
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
+		sosialMedia.deleteYoutube();
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("");
 		extentTest.log(LogStatus.PASS, "User not input number whatsapp");
 	}
 	
 	@And("User click save four")
 	public void user_click_save_four() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save four");
 	}
 
 	@Then("User get validasi four")
 	public void user_get_validasi_four() {
-		HooksSosialMedia.delay(2);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		assertEquals(sosialMedia.getValidasiWa(),"Harap isi wa");
 		System.out.println(sosialMedia.getValidasiWa());
 		extentTest.log(LogStatus.PASS, "User get validasi four");
@@ -218,25 +239,31 @@ public class TestSosialMedia {
 	
 	@When("User input whatsapp with letter")
 	public void user_input_whatsapp_with_letter() {
-		HooksSosialMedia.scroll(-100);
-		HooksSosialMedia.delay(3);
+		driver.get(Constants.URLSOSMED);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("AABBCCDD");
+		HooksSosialMedia.delay(5);
 		extentTest.log(LogStatus.PASS, "User input whatsapp with letter");
 	}
 	
 	@And("User click save five")
 	public void user_click_save_five() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(200);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save five");
 	}
@@ -244,7 +271,8 @@ public class TestSosialMedia {
 	@Then("User get validasi five")
 	public void user_get_validasi_five() {
 		HooksSosialMedia.delay(2);
-		assertEquals(sosialMedia.getValidasiSukses(),"Data berhasil di update");
+		assertEquals(sosialMedia.getValidasiWa(),"Harap isi wa dengan benar");
+//		assertEquals(sosialMedia.getValidasiSukses(),"Data berhasil di update");
 		System.out.println(sosialMedia.getValidasiSukses());
 		extentTest.log(LogStatus.PASS, "User get validasi five");
 	}
@@ -253,27 +281,33 @@ public class TestSosialMedia {
 	
 	@When("User not input one form")
 	public void user_not_input_one_form() {
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("081234567890");
 		extentTest.log(LogStatus.PASS, "User not input one form");
 	}
 	
 	@And("User click save six")
 	public void user_click_save_six() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(200);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
-		extentTest.log(LogStatus.PASS, "User click save six");
+		extentTest.log(LogStatus.PASS, "User click save one");
 	}
 	
 	@Then("User get validasi six")
@@ -292,24 +326,32 @@ public class TestSosialMedia {
 	
 	@When("User input all form")
 	public void user_input_all_form() {
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
+		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("081234567890");
+		HooksSosialMedia.delay(5);
 		extentTest.log(LogStatus.PASS, "User input all form");
 	}
 	
 	@And("User click save seven")
 	public void user_click_save_seven() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(200);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save seven");
 	}
@@ -322,29 +364,36 @@ public class TestSosialMedia {
 		extentTest.log(LogStatus.PASS, "User get validasi seven");
 	}
 
-	//8.passed => berihasil simpan data sosial media
+	//8.passed => berhasil simpan data sosial media
 	
 	@When("User input all form with the true data")
 	public void user_input_all_form_with_the_true_data() {
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteFacebook();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteInstagram();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
-		HooksSosialMedia.delay(3);
-		HooksSosialMedia.scroll(300);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(500);
 		sosialMedia.deleteYoutube();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
-		HooksSosialMedia.delay(3);
+		HooksSosialMedia.delay(5);
 		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("081234567890");
+		HooksSosialMedia.delay(5);
 		extentTest.log(LogStatus.PASS, "User input all form with the true data");
 	}
 	
 	@And("User click save eight")
 	public void user_click_save_eight() {
-		HooksSosialMedia.delay(2);
+		HooksSosialMedia.delay(5);
+		HooksSosialMedia.scroll(200);
+		HooksSosialMedia.delay(5);
 		sosialMedia.clickBtnSave();
 		extentTest.log(LogStatus.PASS, "User click save eight");
 	}
