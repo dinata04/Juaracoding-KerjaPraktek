@@ -1,14 +1,10 @@
 Feature: Modul Benefit
 
 
-
-
-
-
-
+	
 
 # test tambah data--------------------------------------------------------
-	Scenario: show benefit menu
+Scenario: show benefit menu
 		When click sub menu
 		And click benefit menu
 		
@@ -25,6 +21,15 @@ Feature: Modul Benefit
 		And select publish 1
 		Then click save
 		
+		# test edit data--------------------------------------------------------
+	Scenario: edit benefit
+		When click edit
+		And edit text judul 1 "testing123123123"
+		And select publish 2
+		Then click save
+		
+		
 	Scenario: check data
-		When search name "testing123"
+		When click sub menu
+		And click benefit menu
 			#-------------------------------------------------------------------------

@@ -2,7 +2,10 @@ package com.juaracoding.projectJC.Benefit;
 
 import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.juaracoding.projectJC.pages.Benefit;
 import com.juaracoding.projectJC.pages.Login;
@@ -23,7 +26,7 @@ public class TestBenefit {
 		driver = Hooks.driver;
 		extentTest = Hooks.extentTest;
 	}
-	//masuk menu testimonial
+	//masuk menu benefit
 		@When("click sub menu")
 		public void ClickSubMenu() {
 			Hooks.delay(2);
@@ -31,7 +34,7 @@ public class TestBenefit {
 			extentTest.log(LogStatus.PASS, "click sub menu");
 		}
 		@And("click benefit menu")
-		public void ClickTestimonialmenu() {
+		public void ClickBenefitMenu() {
 			benefit.ButtonBenefit();
 			extentTest.log(LogStatus.PASS, "click benefit menu");
 		}
@@ -84,24 +87,70 @@ public class TestBenefit {
 		}
 		@And("select publish {int}")
 		public void SelectPublish(int index) {
-			Hooks.scroll(200);
+			Hooks.scroll(500);
 			benefit.selectPublish(index);
 			extentTest.log(LogStatus.PASS, "select publish");
 		}
 		@Then("click save")
 		public void ClickSave() {
 		Hooks.delay(2);
-			benefit.ButtonSimpan();
-			extentTest.log(LogStatus.PASS, "click save");
+			//benefit.ButtonSimpan();
+			//extentTest.log(LogStatus.PASS, "click save");
+			WebElement l = driver.findElement(By.xpath("//input[@name='mysubmit']"));
+		      //JavaScript Executor to click element
+		      JavascriptExecutor j = (JavascriptExecutor) driver;
+		      j.executeScript("arguments[0].click();", l);
+		      extentTest.log(LogStatus.PASS, "click save");
+		}
+		
+		//edit benefit
+		@When("click edit")
+		public void clickEdit() {
+			benefit.ButtonEdit();
+			extentTest.log(LogStatus.PASS, "click edit");
+		}
+		@And("edit text judul 1 {string}")
+		public void editJudul1(String judul) {
+			benefit.editJudul1(judul);
+			extentTest.log(LogStatus.PASS, "input name");
+		}
+		@And("select publish edit {int}")
+		public void SelectPublishedit(int index) {
+			Hooks.scroll(300);
+			benefit.selectPublishedit(index);
+			extentTest.log(LogStatus.PASS, "select publish edit");
+		}
+		@Then("click save edit")
+		public void ClickSaveEdit() {
+		Hooks.scroll(300);
+		Hooks.delay(2);
+			//benefit.ButtonSimpan();
+			//extentTest.log(LogStatus.PASS, "click save");
+			WebElement l = driver.findElement(By.xpath("//input[@name='mysubmit']"));
+		      //JavaScript Executor to click element
+		      JavascriptExecutor j = (JavascriptExecutor) driver;
+		      j.executeScript("arguments[0].click();", l);
+		      extentTest.log(LogStatus.PASS, "click save");
 		}
 		
 		//Cek Data
-		@When("search name {string}")
-		public void InputsearchJudul(String judul) {
-			benefit.searchJudul(judul);
-			Hooks.delay(1);
-			assertEquals(benefit.JudulBenefit(), true);
-			extentTest.log(LogStatus.PASS, "search judul");
+		@When("click sub menu1")
+		public void ClickSubMenu1() {
+			Hooks.delay(2);
+			benefit.ButtonSubMenu();
+			extentTest.log(LogStatus.PASS, "click sub menu");
 		}
+		@And("click benefit menu1")
+		public void ClickBenefitMenu1() {
+			benefit.ButtonBenefit1();
+			extentTest.log(LogStatus.PASS, "click benefit menu");
+		}
+	//@When("search judul {string}")
+		//public void InputsearchJudul(String judul) {
+			//benefit.searchJudul(judul);
+			//Hooks.delay(1);
+		//	assertEquals(benefit.JudulBenefit(), true);
+			//extentTest.log(LogStatus.PASS, "search judul");
+	//}
 		
 }
