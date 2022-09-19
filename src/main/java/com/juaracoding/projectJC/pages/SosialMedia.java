@@ -48,6 +48,9 @@ public class SosialMedia {
 	@FindBy(xpath = "//*[@id=\"frmregister\"]/div[2]/div/div[4]/div/div[2]")
 	private WebElement linkWaEmpaty;
 	
+	@FindBy(xpath = "/html/body/main/main/section[2]/div/div[1]/div/h1/text()")
+	private WebElement txtSosmedDashboard;
+	
 	public void pilihMenu(String menu, int pilihan) {
 		Select selectMenu = new Select(btnListMenu);
 		selectMenu.selectByVisibleText(menu);
@@ -122,5 +125,9 @@ public class SosialMedia {
 	//validasi sukses
 	public String getValidasiSukses() {
 		return txtSukses.getText();
+	}
+	
+	public String getDashboard() {
+		return txtSosmedDashboard.getText();
 	}
 }

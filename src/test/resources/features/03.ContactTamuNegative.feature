@@ -10,7 +10,7 @@ Feature: Modul Contact Tamu Negative
 		
 	#2.fail => mengisi email dengan angka ---------------------------------------------------------------------
 	
-	Scenario: Fill Name with Number
+	Scenario: Fill Email with Number
 		When User input email with number
 		And User clik button send two
 		Then Alert invalid message two

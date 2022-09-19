@@ -31,10 +31,10 @@ public class DetailDataContact {
 	@FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[5]")
 	private WebElement txtMessage;
 	
-	@FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[7]/a")
+	@FindBy(xpath = "//span[@aria-hidden='true']")
 	private WebElement btnNext;
 	
-	@FindBy(xpath = "//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[1]/a")
+	@FindBy(xpath = "//a[normalize-space()='3']")
 	private WebElement btnPrev;
 	
 	public String getTxtName() {

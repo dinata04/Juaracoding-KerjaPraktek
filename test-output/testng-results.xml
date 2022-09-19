@@ -1,93 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-18T02:08:00 WIB" name="Default suite" finished-at="2022-09-18T02:12:20 WIB" duration-ms="259294">
+  <suite started-at="2022-09-19T13:18:58 WIB" name="Default suite" finished-at="2022-09-19T13:24:29 WIB" duration-ms="330666">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-18T02:08:00 WIB" name="Default test" finished-at="2022-09-18T02:12:20 WIB" duration-ms="259294">
-      <class name="com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" started-at="2022-09-18T02:08:00 WIB" name="setUpClass" finished-at="2022-09-18T02:08:01 WIB" duration-ms="779" status="PASS">
+    <test started-at="2022-09-19T13:18:58 WIB" name="Default test" finished-at="2022-09-19T13:24:29 WIB" duration-ms="330666">
+      <class name="com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:18:58 WIB" name="setUpClass" finished-at="2022-09-19T13:18:58 WIB" duration-ms="487" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4527f70a]]>
+                <![CDATA[org.testng.TestRunner@51e3d37e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" started-at="2022-09-18T02:08:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-18T02:12:16 WIB" duration-ms="254815" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:18:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:19:55 WIB" duration-ms="56313" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["View Data Contact"]]>
+                <![CDATA["User valid login"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Detail Contact Admin"]]>
+                <![CDATA["Seacrh Contact"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="pageWrapper"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[7]/a"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-RARCBNQ', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ERBINA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c8d52839b2b62090e212f2ffcd51b89
-*** Element info: {Using=xpath, value=//*[@id="pageWrapper"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[7]/a}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="pageWrapper"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[7]/a"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-RARCBNQ', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\ERBINA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58627}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8c8d52839b2b62090e212f2ffcd51b89
-*** Element info: {Using=xpath, value=//*[@id="pageWrapper"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[7]/a}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-at com.juaracoding.projectJC.pages.DetailDataContact.clickBtnNext(DetailDataContact.java:61)
-at com.juaracoding.projectJC.web_admin.step_view_data.TestDetailData.user_click_button_next(TestDetailData.java:132)
-at ✽.User click button next(file:///D:/eclipse-workspace/Juaracoding-KerjaPraktek/src/test/resources/features/04.DetailDataContact.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" started-at="2022-09-18T02:12:16 WIB" name="tearDownClass" finished-at="2022-09-18T02:12:20 WIB" duration-ms="3602" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:19:55 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:20:19 WIB" duration-ms="24419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:20:19 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:20:52 WIB" duration-ms="32692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search name null"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:20:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:21:17 WIB" duration-ms="24818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search email"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:21:17 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:21:47 WIB" duration-ms="30869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search email null"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:21:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:22:18 WIB" duration-ms="30657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:22:18 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:22:49 WIB" duration-ms="30793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search number null"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:22:49 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:23:20 WIB" duration-ms="31345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search subject"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:23:20 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:23:51 WIB" duration-ms="31089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search subject null"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:23:51 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:24:26 WIB" duration-ms="34618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User search message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Seacrh Contact"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:24:26 WIB" name="tearDownClass" finished-at="2022-09-19T13:24:29 WIB" duration-ms="2515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData -->
+      </class> <!-- com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

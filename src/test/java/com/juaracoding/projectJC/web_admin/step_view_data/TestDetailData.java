@@ -40,7 +40,7 @@ public class TestDetailData {
 	public void user_input_data_contact_two() {
 		HooksDetailContact.scroll(350);
 		HooksDetailContact.delay(5);
-		contactTamu.txtName("Bryan");
+		contactTamu.txtName("Libur");
 		HooksDetailContact.delay(5);
 		contactTamu.txtEmail("bryan@gmail.com");
 		HooksDetailContact.delay(5);
@@ -92,7 +92,7 @@ public class TestDetailData {
 	@And("User view data name in table")
 	public void user_view_data_name_in_table() {
 		HooksDetailContact.delay(5);
-		assertEquals(detailData.getTxtName(),"Bryan");
+		assertEquals(detailData.getTxtName(),"Libur");
 		System.out.println(detailData.getTxtName());
 		extentTest.log(LogStatus.PASS, "User view data name in table");
 	}
@@ -128,16 +128,21 @@ public class TestDetailData {
 	@And("User click button next")
 	public void user_click_button_next() {
 		HooksDetailContact.delay(5);
+		login.clickBtnContact();
+		HooksDetailContact.delay(3);
 		HooksDetailContact.scroll(700);
+		HooksDetailContact.delay(5);
 		detailData.clickBtnNext();
 		System.out.println(detailData.getTxtName());
+//		HooksDetailContact.delay(3);
+//		detailData.clickBtnNext();
 		extentTest.log(LogStatus.PASS, "User click button next");
 	}
 	
 	@And("User click button prev")
 	public void user_click_button_prev() {
 		HooksDetailContact.delay(5);
-		HooksDetailContact.scroll(700);
+		HooksDetailContact.scroll(750);
 		detailData.clickBtnPrev();
 		System.out.println(detailData.getTxtName());
 		extentTest.log(LogStatus.PASS, "User click button prev");

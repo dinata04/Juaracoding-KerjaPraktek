@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
 
+import com.juaracoding.projectJC.pages.DetailDataContact;
 import com.juaracoding.projectJC.pages.Login;
 import com.juaracoding.projectJC.pages.ModulContactTamu;
 import com.juaracoding.projectJC.utils.Constants;
@@ -19,6 +20,7 @@ public class TestContactNegative {
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private ModulContactTamu contactTamu = new ModulContactTamu();
+	private DetailDataContact detail = new DetailDataContact();
 	private Login login = new Login();
 
 	public TestContactNegative() {
@@ -79,7 +81,7 @@ public class TestContactNegative {
 		HooksContactNegative.delay(6);
 		contactTamu.txtName("pr");
 		HooksContactNegative.delay(5);
-		contactTamu.txtEmail("12345");
+		contactTamu.txtEmail("1234");
 		HooksContactNegative.delay(5);
 		contactTamu.txtNumber("123");
 		HooksContactNegative.delay(5);
@@ -118,7 +120,7 @@ public class TestContactNegative {
 //		System.out.println(login.getTxtHasilSearch());
 		HooksContactNegative.delay(3);
 		HooksContactNegative.scroll(350);
-		assertEquals(contactTamu.getValidasiEmailAngka(),"The email field must contain a valid email address");
+		assertEquals(contactTamu.getValidasiEmailAngka(),"The email field must contain a valid email address.");
 		System.out.println(contactTamu.getValidasiEmailAngka());
 		HooksContactNegative.delay(3);
 		extentTest.log(LogStatus.PASS, "Alert invalid message two");
@@ -196,8 +198,8 @@ public class TestContactNegative {
 	public void alert_invalid_message_four() {
 		HooksContactNegative.delay(3);
 		HooksContactNegative.scroll(350);
-		assertEquals(contactTamu.getTxtSuksesSend(),"Thank You for contact us");
-		System.out.println("Thank You for contact us");
+		assertEquals(contactTamu.getValidasiNomorKosong(),"The number phone field must contain a valid number");
+		System.out.println(contactTamu.getValidasiNomorKosong());
 		HooksContactNegative.delay(3);
 		extentTest.log(LogStatus.PASS, "Alert invalid message four");
 	}
@@ -324,8 +326,8 @@ public class TestContactNegative {
 		HooksContactNegative.delay(5);
 		login.searchData("kerja Lagi");
 		HooksContactNegative.delay(5);
-//		assertEquals(login.getTxtHasilSearch(),"kerja Lagi");
-//		System.out.println(login.getTxtResultName());
+		assertEquals(detail.getTxtMessage(),"kerja Lagi");
+		System.out.println(detail.getTxtMessage());
 //		HooksContactNegative.delay(3);
 //		HooksContactNegative.scroll(350);
 //		assertEquals(contactTamu.getTxtSuksesSend(),"Thank You for contact us");

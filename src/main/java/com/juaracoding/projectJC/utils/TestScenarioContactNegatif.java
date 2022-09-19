@@ -3,7 +3,7 @@ package com.juaracoding.projectJC.utils;
 public enum TestScenarioContactNegatif {
 	
 	T1("Do Not Fill in the Name"),
-	T2("Fill Name with Number"),
+	T2("Fill Email with Number"),
 	T3("Do Not Fill in the Email"),
 	T4("Fill in The Phone Number with the Letter"),
 	T5("Do Not Fill in The Phone Number"),

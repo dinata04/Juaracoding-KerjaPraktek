@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import com.juaracoding.projectJC.pages.Login;
 import com.juaracoding.projectJC.pages.SosialMedia;
 import com.juaracoding.projectJC.utils.Constants;
+import com.juaracoding.projectJC.web_tamu.modul_contact_message_negative.HooksContactNegative;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -250,9 +251,38 @@ public class TestSosialMedia {
 
 	//6.failed => gagal simpan data sosial media
 	
-	//@When User not input one form
-	//@And User click save six
-	//@Then User get validasi six
+	@When("User not input one form")
+	public void user_not_input_one_form() {
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteFacebook();
+		sosialMedia.inputFacebook("");
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteInstagram();
+		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
+		HooksSosialMedia.delay(3);
+		HooksSosialMedia.scroll(300);
+		sosialMedia.deleteYoutube();
+		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteWa();
+		sosialMedia.inputWa("081234567890");
+		extentTest.log(LogStatus.PASS, "User not input one form");
+	}
+	
+	@And("User click save six")
+	public void user_click_save_six() {
+		HooksSosialMedia.delay(2);
+		sosialMedia.clickBtnSave();
+		extentTest.log(LogStatus.PASS, "User click save six");
+	}
+	
+	@Then("User get validasi six")
+	public void user_get_validasi_six() {
+		HooksSosialMedia.delay(2);
+		assertEquals(sosialMedia.getValidasiFb(),"Harap isi facebook");
+		System.out.println(sosialMedia.getValidasiFb());
+		extentTest.log(LogStatus.PASS, "User get validasi six");
+	}
 
 	//7.passed => simpan data sosial media	
 		//7a.passed => masukan link facebook
@@ -260,13 +290,72 @@ public class TestSosialMedia {
 		//7c.passed => masukkan link youtube
 		//7d.passed => masukkan no whatsapp
 	
-	//@When User input all form
-	//@And User click save seven
-	//@Then User get validasi seven
+	@When("User input all form")
+	public void user_input_all_form() {
+		HooksSosialMedia.delay(3);
+		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteInstagram();
+		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
+		HooksSosialMedia.delay(3);
+		HooksSosialMedia.scroll(300);
+		sosialMedia.deleteYoutube();
+		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteWa();
+		sosialMedia.inputWa("081234567890");
+		extentTest.log(LogStatus.PASS, "User input all form");
+	}
+	
+	@And("User click save seven")
+	public void user_click_save_seven() {
+		HooksSosialMedia.delay(2);
+		sosialMedia.clickBtnSave();
+		extentTest.log(LogStatus.PASS, "User click save seven");
+	}
+	
+	@Then("User get validasi seven")
+	public void user_get_validasi_seven() {
+		HooksSosialMedia.delay(2);
+		assertEquals(sosialMedia.getValidasiSukses(),"Data berhasil di update");
+		System.out.println(sosialMedia.getValidasiSukses());
+		extentTest.log(LogStatus.PASS, "User get validasi seven");
+	}
 
 	//8.passed => berihasil simpan data sosial media
 	
-	//@When User input all form with the true data
-	//@And User click save eight
-	//@Then User get validasi eight
+	@When("User input all form with the true data")
+	public void user_input_all_form_with_the_true_data() {
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteFacebook();
+		sosialMedia.inputFacebook("https://www.facebook.com/juaracoding");
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteInstagram();
+		sosialMedia.inputInstagram("https://www.instagram.com/juaracoding/");
+		HooksSosialMedia.delay(3);
+		HooksSosialMedia.scroll(300);
+		sosialMedia.deleteYoutube();
+		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
+		HooksSosialMedia.delay(3);
+		sosialMedia.deleteWa();
+		sosialMedia.inputWa("081234567890");
+		extentTest.log(LogStatus.PASS, "User input all form with the true data");
+	}
+	
+	@And("User click save eight")
+	public void user_click_save_eight() {
+		HooksSosialMedia.delay(2);
+		sosialMedia.clickBtnSave();
+		extentTest.log(LogStatus.PASS, "User click save eight");
+	}
+	
+	@Then("User get validasi eight")
+	public void user_get_validasi_eight() {
+		HooksSosialMedia.delay(5);
+		driver.get(Constants.URLTwo);
+		HooksSosialMedia.scroll(500);
+		assertEquals(sosialMedia.getDashboard(),"Sosial Media");
+		System.out.println(sosialMedia.getDashboard());
+		extentTest.log(LogStatus.PASS, "User get validasi eight");
+	}
 }
