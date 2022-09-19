@@ -32,7 +32,7 @@ public static ExtentReports reports = new ExtentReports("target/extent-reports.h
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
 		TestScenariosbenefit[] tests = TestScenariosbenefit.values();
-		extentTest = reports.startTest(tests[Utils.testCount].getTestName());
+		extentTest = reports.startTest(tests[Utils.testCount].getTestBenefit());
 		Utils.testCount++;
 	}
 	

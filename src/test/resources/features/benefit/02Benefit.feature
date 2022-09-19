@@ -20,7 +20,6 @@ Scenario: show benefit menu
 		When click sub menu
 		And click benefit menu
 		
-		
 		Scenario: add benefit
 		When click add benefit
 		And input text judul 1 "testing123"
@@ -41,6 +40,7 @@ Scenario: show benefit menu
 		And select publish 2
 		Then click save
 		
+		# check data--------------------------------------------------------
 	Scenario: check data
 		When click sub menu
 		And click benefit menu

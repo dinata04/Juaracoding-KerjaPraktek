@@ -15,7 +15,7 @@ public enum TestScenariosbenefit {
 		testBenefit = value;
 	}
 	
-	public String getTestName() {
+	public String getTestBenefit() {
 		return testBenefit;
 	}
 	
