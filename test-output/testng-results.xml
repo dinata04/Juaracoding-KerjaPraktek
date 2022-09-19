@@ -1,191 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-19T13:18:58 WIB" name="Default suite" finished-at="2022-09-19T13:24:29 WIB" duration-ms="330666">
+  <suite started-at="2022-09-19T14:56:45 WIB" name="Default suite" finished-at="2022-09-19T14:59:49 WIB" duration-ms="183788">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-09-19T13:18:58 WIB" name="Default test" finished-at="2022-09-19T13:24:29 WIB" duration-ms="330666">
-      <class name="com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:18:58 WIB" name="setUpClass" finished-at="2022-09-19T13:18:58 WIB" duration-ms="487" status="PASS">
+    <test started-at="2022-09-19T14:56:45 WIB" name="Default test" finished-at="2022-09-19T14:59:49 WIB" duration-ms="183788">
+      <class name="com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" started-at="2022-09-19T14:56:45 WIB" name="setUpClass" finished-at="2022-09-19T14:56:45 WIB" duration-ms="487" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@51e3d37e]]>
+                <![CDATA[org.testng.TestRunner@68ac9ec5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:18:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:19:55 WIB" duration-ms="56313" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" started-at="2022-09-19T14:56:45 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T14:59:46 WIB" duration-ms="180975" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User valid login"]]>
+                <![CDATA["View Data Contact"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Seacrh Contact"]]>
+                <![CDATA["Detail Contact Admin"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:19:55 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:20:19 WIB" duration-ms="24419" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search name"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:20:19 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:20:52 WIB" duration-ms="32692" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search name null"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:20:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:21:17 WIB" duration-ms="24818" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search email"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:21:17 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:21:47 WIB" duration-ms="30869" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search email null"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:21:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:22:18 WIB" duration-ms="30657" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search number"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:22:18 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:22:49 WIB" duration-ms="30793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search number null"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:22:49 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:23:20 WIB" duration-ms="31345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search subject"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:23:20 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:23:51 WIB" duration-ms="31089" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search subject null"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:23:51 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-19T13:24:26 WIB" duration-ms="34618" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User search message"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Seacrh Contact"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact@708f5957]" started-at="2022-09-19T13:24:26 WIB" name="tearDownClass" finished-at="2022-09-19T13:24:29 WIB" duration-ms="2515" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957]" started-at="2022-09-19T14:59:46 WIB" name="tearDownClass" finished-at="2022-09-19T14:59:49 WIB" duration-ms="2286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.juaracoding.projectJC.web_admin.step_definitions.TestRunnerSearchContact -->
+      </class> <!-- com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

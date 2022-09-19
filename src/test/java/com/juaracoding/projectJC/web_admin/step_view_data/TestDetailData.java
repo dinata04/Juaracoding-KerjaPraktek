@@ -2,7 +2,10 @@ package com.juaracoding.projectJC.web_admin.step_view_data;
 
 import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.juaracoding.projectJC.pages.DetailDataContact;
 import com.juaracoding.projectJC.pages.Login;
@@ -142,8 +145,12 @@ public class TestDetailData {
 	@And("User click button prev")
 	public void user_click_button_prev() {
 		HooksDetailContact.delay(5);
-		HooksDetailContact.scroll(750);
-		detailData.clickBtnPrev();
+		HooksDetailContact.scroll(550);		
+		WebElement l = driver.findElement(By.xpath("//*[@id=\"pageWrapper\"]/div[2]/div[2]/div/div[2]/div/div/div/div[3]/nav/ul/li[1]/a"));
+	      //JavaScript Executor to click element
+	      JavascriptExecutor j = (JavascriptExecutor) driver;
+	      j.executeScript("arguments[0].click();", l);
+//		detailData.clickBtnPrev();
 		System.out.println(detailData.getTxtName());
 		extentTest.log(LogStatus.PASS, "User click button prev");
 	}

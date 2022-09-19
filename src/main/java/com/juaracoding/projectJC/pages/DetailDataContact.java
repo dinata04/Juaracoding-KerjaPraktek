@@ -34,7 +34,7 @@ public class DetailDataContact {
 	@FindBy(xpath = "//span[@aria-hidden='true']")
 	private WebElement btnNext;
 	
-	@FindBy(xpath = "//a[normalize-space()='3']")
+	@FindBy(xpath = "//span[normalize-space()='«']")
 	private WebElement btnPrev;
 	
 	public String getTxtName() {
