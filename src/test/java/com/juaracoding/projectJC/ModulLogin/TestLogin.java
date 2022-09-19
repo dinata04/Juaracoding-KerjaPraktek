@@ -3,7 +3,10 @@ package com.juaracoding.projectJC.ModulLogin;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import com.juaracoding.projectJC.pages.Login;
 import com.juaracoding.projectJC.utils.Constants;
@@ -149,5 +152,24 @@ public class TestLogin {
 		extentTest.log(LogStatus.PASS, "User Valid login");
 	}
 	
+//	Logout
+	
+	@When("click logout")
+	public void logout() {
+		Hooks.delay(1);
+		Actions action = new Actions(driver);
+		WebElement menuOption = driver.findElement(By.xpath(".//p[contains(text(),'Admin ')]"));
+		action.moveToElement(menuOption).perform();
+		
+		WebElement logout = driver.findElement(By.xpath("//span[normalize-space()='Log Out']"));
+		logout.click();
+		extentTest.log(LogStatus.PASS,"click logout");
+	}
+	
+	@Then("validation success logout")
+	public void validSuccessLogout() {
+		assertEquals(login.getTxtlogout(),"Admin Login");
+		extentTest.log(LogStatus.PASS, "validation success logout");
+	}
 
 }

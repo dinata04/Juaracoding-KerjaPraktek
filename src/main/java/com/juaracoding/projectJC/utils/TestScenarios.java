@@ -7,7 +7,7 @@ public enum TestScenarios {
 	T3("invalid password"),
 	T4("username & password null"),
 	T5("User valid login"),
-	T6("show menu blog");
+	T6("Logout");
 	
 	
 	

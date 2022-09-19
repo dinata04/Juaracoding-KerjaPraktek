@@ -74,5 +74,11 @@ Feature: Modul Blog
 		And input form add valid
 		And click button simpan
 		Then validation success add
+	
+	# Validasi Blog di web tamu
+	Scenario: validation web tamu
+		When go to web tamu
+		And click menu blog Tamu
+		Then validation data blog
 		
 		

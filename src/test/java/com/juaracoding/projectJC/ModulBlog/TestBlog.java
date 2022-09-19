@@ -64,7 +64,7 @@ public class TestBlog {
 	
 	@Then("validation search")
 	public void validationKeyword() {
-		assertEquals(blog.getTxtSearch(), "Total Search : 2 Data");
+		assertEquals(blog.getTxtSearch(), "Total Search : 3 Data");
 		extentTest.log(LogStatus.PASS, "validation keyword");
 	}
 	
@@ -416,11 +416,11 @@ public class TestBlog {
 		Hooks.delay(1);
 		blog.chooseFile("E:\\Foto\\android Wallpaper\\android.jpg");
 		Hooks.delay(1);
-		blog.inputJudul("Belajar SQA1");
+		blog.inputJudul("Testing Berhasil Tambah Blog 2");
 		Hooks.delay(1);
 		blog.selectPublish("1");
 		Hooks.delay(1);
-		blog.selectSetHome("0");
+		blog.selectSetHome("1");
 		Hooks.delay(1);
 		blog.inputContentPreview("memahami SQA");
 		Hooks.delay(1);
@@ -444,6 +444,25 @@ public class TestBlog {
 	public void validationSuccessAdd() {
 		assertEquals(blog.viewAlertSuccess(), "Data berhasil di tambah");
 		extentTest.log(LogStatus.PASS, "validation success add");
+	}
+	
+	@When("go to web tamu")
+	public void user_go_to_web_tamu() {
+		driver.get(Constants.URLTwo);
+		extentTest.log(LogStatus.PASS, "User go to web tamu");
+	}
+	
+	@And("click menu blog Tamu")
+	public void clickMenuBlogTamu() {
+		Hooks.scroll(50);
+		blog.clickBtnBlogTamu();
+		extentTest.log(LogStatus.PASS, "click menu blog");
+	}
+	
+	@Then("validation data blog")
+	public void validationDataBlog() {
+		assertEquals(blog.getTxtSuccessAddWebTamu(), "Testing Berhasil Tambah Blog 2");
+		extentTest.log(LogStatus.PASS, "validation data blog");
 	}
 	
 }

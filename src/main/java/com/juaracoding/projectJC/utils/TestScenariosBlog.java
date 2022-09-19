@@ -13,7 +13,8 @@ public enum TestScenariosBlog {
 	T9("valid edit blog"),
 	T10("edit content preview null"),
 	T11("edit content null"),
-	T12("valid add blog");
+	T12("valid add blog"),
+	T13("validation web tamu");
 	
 	private String testName;
 	

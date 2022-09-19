@@ -68,7 +68,7 @@ private WebDriver driver;
 	@FindBy(xpath = "//alert[@class='alert alert-success']")
 	private WebElement alsertSuccess;
 	
-	@FindBy(xpath = "//b[normalize-space()='Total Search : 2 Data']")
+	@FindBy(xpath = "//b[normalize-space()='Total Search : 3 Data']")
 	private WebElement txtSearch;
 	
 	@FindBy(xpath = "//div[@class='alert alert-danger mt-2']")
@@ -76,6 +76,14 @@ private WebDriver driver;
 	
 	@FindBy(xpath = "//h4[normalize-space()='Belajar SQA1']")
 	private WebElement txtSuccessEdit;
+	
+	@FindBy(xpath = "//h1[normalize-space()='Testing Berhasil Tambah Blog 2']")
+	private WebElement txtSuccessAddWebTamu;
+	
+	
+//	Web tamu
+	@FindBy(xpath = "//a[@class='nav-link'][normalize-space()='Blog']")
+	private WebElement btnBlogTamu;
 	
 //	search blog
 	public void searchBlog(String keyword) {
@@ -155,6 +163,15 @@ private WebDriver driver;
 	
 	public String getTxtSuccessEdit() {
 		return txtSuccessEdit.getText();
+	}
+	
+	public String getTxtSuccessAddWebTamu() {
+		return txtSuccessAddWebTamu.getText();
+	}
+	
+//	Web Tamu
+	public void clickBtnBlogTamu() {
+		btnBlogTamu.click();
 	}
 	
 	

@@ -31,4 +31,7 @@ Feature: Login Admin
 		And User clik button sign
 		Then User Valid login
 		
+	Scenario: Logout
+		When click logout
+		Then validation success logout
 		

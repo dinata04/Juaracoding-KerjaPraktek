@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.juaracoding.projectJC.ModulBlog.TestRunner">
+      <class name="com.juaracoding.projectJC.ModulLogin.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="9 10 11"/>
+          <include name="runScenario" invocation-numbers="5"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.juaracoding.projectJC.ModulBlog.TestRunner -->
+      </class> <!-- com.juaracoding.projectJC.ModulLogin.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

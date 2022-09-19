@@ -37,6 +37,12 @@ public class Login {
 	@FindBy(xpath = "//button[normalize-space()='OK']")
 	private WebElement btnOK;
 	
+	@FindBy(linkText = "Log Out")
+	private WebElement btnLogout;
+	
+	@FindBy(xpath = "//h1[normalize-space()='Admin Login']")
+	private WebElement txtSuccessLogout;
+	
 	public void login(String username, String password) {
 		this.username.sendKeys(username);
 		this.password.sendKeys(password);
@@ -61,5 +67,15 @@ public class Login {
 	public String getTxtAlertLogin() {
 		return alertLogin.getText();
 	}
+	
+//	Logout
+	public void clickBtnLogout() {
+		btnLogout.click();
+	}
+	
+	public String getTxtlogout() {
+		return txtSuccessLogout.getText();
+	}
+	
 
 }
