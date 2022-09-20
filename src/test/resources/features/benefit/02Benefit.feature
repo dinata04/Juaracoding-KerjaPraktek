@@ -33,6 +33,7 @@ Scenario: show benefit menu
 		And select publish 1
 		Then click save
 		
+		
 		# test edit data--------------------------------------------------------
 	Scenario: edit benefit
 		When click edit
