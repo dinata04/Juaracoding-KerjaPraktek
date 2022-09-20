@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 19 14:56:45 WIB 2022</td>
+<td>Started on:</td><td>Tue Sep 20 18:34:21 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>183 seconds (183788 ms)</td>
+<tr><td>Total time:</td><td>82 seconds (82545 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,27 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData<br>Test method: Runs Cucumber Scenarios<br>Parameters: "View Data Contact", "Detail Contact Admin"</td>
-<td></td>
-<td>180</td>
+<td><div><pre>java.lang.AssertionError: expected [081234567891] but found [2147483647]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.projectJC.web_admin.step_view_data.TestDetailData.user_view_data_phone_number_in_table(TestDetailData.java:112)
+	at ✽.User view data phone number in table(file:///D:/eclipse-workspace/Juaracoding-KerjaPraktek/src/test/resources/features/04.DetailDataContact.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1156729376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1156729376'><pre>java.lang.AssertionError: expected [081234567891] but found [2147483647]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.projectJC.web_admin.step_view_data.TestDetailData.user_view_data_phone_number_in_table(TestDetailData.java:112)
+	at ✽.User view data phone number in table(file:///D:/eclipse-workspace/Juaracoding-KerjaPraktek/src/test/resources/features/04.DetailDataContact.feature:12)
+</pre></div></td>
+<td>79</td>
 <td>com.juaracoding.projectJC.web_admin.step_view_data.TestRunnerDetailData@708f5957</td></tr>
 </table><p>
 </body>

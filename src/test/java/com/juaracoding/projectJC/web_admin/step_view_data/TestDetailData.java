@@ -47,7 +47,7 @@ public class TestDetailData {
 		HooksDetailContact.delay(5);
 		contactTamu.txtEmail("bryan@gmail.com");
 		HooksDetailContact.delay(5);
-		contactTamu.txtNumber("2147483647");
+		contactTamu.txtNumber("081234567891");
 		HooksDetailContact.delay(5);
 		contactTamu.txtSubject("Kerja Praktek");
 		HooksDetailContact.delay(5);
@@ -109,7 +109,7 @@ public class TestDetailData {
 	
 	@And("User view data phone number in table")
 	public void user_view_data_phone_number_in_table() {
-		assertEquals(detailData.getTxtNumber(),"2147483647");
+		assertEquals(detailData.getTxtNumber(),"081234567891");
 		System.out.println(detailData.getTxtNumber());
 		extentTest.log(LogStatus.PASS, "User view data phone number in table");
 	}

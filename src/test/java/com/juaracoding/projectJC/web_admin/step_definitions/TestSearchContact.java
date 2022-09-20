@@ -136,9 +136,9 @@ public class TestSearchContact {
 		HooksSearchContact.delay(6);
 		assertEquals(login.getTxtMenuContact(),"Data Contact Messages");
 		System.out.println(login.getTxtMenuContact());
-		HooksSearchContact.delay(5);
+		HooksSearchContact.delay(8);
 		search.pilihKategori("Email",1);
-//		HooksSearchContact.delay(6);
+		HooksSearchContact.delay(6);
 		extentTest.log(LogStatus.PASS, "User select colom by email");
 	}
 	
@@ -167,7 +167,7 @@ public class TestSearchContact {
 		HooksSearchContact.delay(6);
 		assertEquals(login.getTxtMenuContact(),"Data Contact Messages");
 		System.out.println(login.getTxtMenuContact());
-		HooksSearchContact.delay(5);
+		HooksSearchContact.delay(8);
 		search.pilihKategori("Email",1);
 		HooksSearchContact.delay(6);
 		extentTest.log(LogStatus.PASS, "User select colom by email two");

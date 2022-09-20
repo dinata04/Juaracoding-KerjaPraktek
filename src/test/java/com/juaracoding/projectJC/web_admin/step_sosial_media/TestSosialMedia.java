@@ -254,6 +254,8 @@ public class TestSosialMedia {
 		HooksSosialMedia.delay(5);
 		sosialMedia.inputYoutube("https://bit.ly/juaracoding_yt");
 		HooksSosialMedia.delay(5);
+		sosialMedia.deleteWa();
+		HooksSosialMedia.delay(5);
 		sosialMedia.inputWa("AABBCCDD");
 		HooksSosialMedia.delay(5);
 		extentTest.log(LogStatus.PASS, "User input whatsapp with letter");
